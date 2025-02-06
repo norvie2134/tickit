@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TicKit - Movies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 5px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .movies-container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .movies-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .movies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .movie-card {
+      background-color: #1f1f1f;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+      text-align: center;
+    }
+    .movie-card:hover {
+      transform: scale(1.03);
+    }
+    .movie-poster {
+      width: 100%;
+      height: auto;
+    }
+    .movie-info {
+      padding: 15px;
+    }
+    .movie-info h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .movie-info p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 0 10px;
+    }
+    .btn-disabled {
+      background-color: gray;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: not-allowed;
+      width: 100%;
+      display: inline-block;
+    }
+    footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TicKit</h1>
+    <p>Your Smarter Ticket to the Cinema</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="movies-container">
+      <h2>Now Showing</h2>
+      <div class="movies-grid">
+        
+        <!-- Cells at Work -->
+        <div class="movie-card">
+          <img src="cellsatwork.jpg" alt="Cells at Work" class="movie-poster">
+          <div class="movie-info">
+            <h3>Cells at Work</h3>
+            <p>The smallest protagonist in film history - a human cell! There are a staggering 37 trillion cells in the human body.</p>
+            <button class="btn-disabled">Booking Not Yet Available</button>
+          </div>
+        </div>
+
+        <!-- Overlord: The Sacred Kingdom -->
+        <div class="movie-card">
+          <img src="overlord.jpg" alt="Overlord: The Sacred Kingdom" class="movie-poster">
+          <div class="movie-info">
+            <h3>Overlord: The Sacred Kingdom</h3>
+            <p>After twelve years of playing his favorite MMORPG game, Momonga logs in for the last time only to find himself transported into its world.</p>
+            <button class="btn-disabled">Booking Not Yet Available</button>
+          </div>
+        </div>
+
+        <!-- Moana 2 -->
+        <div class="movie-card">
+          <img src="moana.jpg" alt="Moana 2" class="movie-poster">
+          <div class="movie-info">
+            <h3>Moana 2</h3>
+            <p>After receiving an unexpected call from her wayfinding ancestors, Moana journeys alongside Maui into the far seas of Oceania.</p>
+            <button class="btn-disabled">Booking Not Yet Available</button>
+          </div>
+        </div>
+
+        <!-- Wicked -->
+        <div class="movie-card">
+          <img src="wicked.jpg" alt="Wicked" class="movie-poster">
+          <div class="movie-info">
+            <h3>Wicked</h3>
+            <p>Elphaba, an ostracized but defiant girl born with green skin, and Glinda, a privileged aristocrat, become unlikely friends in the magical Land of Oz.</p>
+            <button class="btn-disabled">Booking Not Yet Available</button>
+          </div>
+        </div>
+
+        <!-- Sonic the Hedgehog 3 -->
+        <div class="movie-card">
+          <img src="sonic.jpg" alt="Sonic the Hedgehog 3" class="movie-poster">
+          <div class="movie-info">
+            <h3>Sonic the Hedgehog 3</h3>
+            <p>Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain unlike anything they have faced before.</p>
+            <button class="btn-disabled">Booking Not Yet Available</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TicKit. All rights reserved.</p>
+  </footer>
+</body>
+</html>
